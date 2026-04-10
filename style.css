@@ -4,9 +4,6 @@ html {
 }
 
 body {
-  /* Set line height to 1.5 times the font size
-	   and use the OS’s UI font as the website font
-	 */
   font: 100%/1.5 system-ui;
   max-width: 100ch;
   display: block;
@@ -85,13 +82,19 @@ article {
   gap: 1em;
 }
 
-h1{
+h1 {
   font-size: 4rem;
+  margin-bottom: 0.2em;
 }
+
 
 h2 {
   margin: 0;
   font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1rem;
 }
 
 h1,
@@ -102,4 +105,46 @@ h5,
 h6 {
   line-height: 1.1;
   text-wrap: balance;
+  margin-block: 0.5em;
 }
+
+header p {
+  margin: 0.2em 0;
+  font-size: 1.1rem;
+  color: var(--color-text-muted, #555);
+}
+
+body {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+section {
+  margin-block: 2.5rem;
+}
+
+section p a {
+  text-decoration: none;
+}
+
+section p a:hover {
+  text-decoration: underline;
+}
+
+article {
+  margin-block: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+
+article h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.3em;
+}
+
+article:last-child {
+  border-bottom: none;
+}
+
