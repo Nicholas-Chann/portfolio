@@ -132,10 +132,25 @@ section p a:hover {
   text-decoration: underline;
 }
 
+header h1 {
+  margin-block: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #ddd;
+}
+
+
+
+section h2{
+  margin-block: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #ddd;
+}
+
+
 article {
   margin-block: 1.5rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 2px solid #ddd;
 }
 
 
@@ -147,4 +162,3 @@ article h3 {
 article:last-child {
   border-bottom: none;
 }
-
