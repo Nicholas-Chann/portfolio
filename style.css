@@ -22,17 +22,16 @@ img {
 nav {
   display: flex;
   margin-bottom: 1em;
-  --border-color: oklch(50% 10% 200 / 40%);
+ --border-color: oklch(71.953% 0.00113 13.205 / 0.4);
   border-bottom: 1px solid var(--border-color);
 }
 
 nav a {
-  flex: 1;
   text-decoration: none;
   color: inherit;
   text-align: center;
   padding: 0.4em;
-  border-bottom-color: solid var(--border-color); 
+  border-bottom: 0.4em solid transparent;
 }
 
 nav a:hover {
@@ -41,7 +40,8 @@ nav a:hover {
 }
 
 nav a.current {
-  border-bottom-color: solid var(--border-color); 
+  border-bottom: 0.4em solid var(--border-color);
+  padding-bottom: 0.4em;
   font-weight: bold;
 }
 
