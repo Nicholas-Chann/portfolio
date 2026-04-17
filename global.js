@@ -14,7 +14,8 @@ let pages = [
   { url: "", title: "Home" },
   { url: "projects/", title: "Projects" },
   { url: "contacts/", title: "Contact" },
-  { url: "Resume/", title: "Resume" }
+  { url: "Resume/", title: "Resume" },
+  { url: "", title: "GitHub" },
 ];
 
 let nav = document.createElement('nav');
@@ -29,10 +30,10 @@ let url = p.url;
 let title = p.title;
 // next step: create link and add it to nav
 
-// Create link and add it to nav
-nav.insertAdjacentHTML('beforeend', `<a href="/portfolio/${url}">${title}</a>`);
-}
-
+let a = document.createElement('a');
+a.href = url;
+a.textContent = title;
+nav.append(a);
 let navLinks = $$("nav a");
 
 let currentLink = navLinks.find(
