@@ -37,12 +37,12 @@ nav a {
 
 nav a:hover {
   background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
-  border-bottom: 0.4em solid var(--color-accent);
+  border-bottom: 0.5em solid var(--color-accent);
 }
 
 nav a.current {
-  border-bottom: 0.4em solid var(--border-color);
-  padding-bottom: 0.1em;
+  border-bottom: 0.5em solid var(--border-color);
+  padding-bottom: 0.5em;
   font-weight: bold;
 }
 
@@ -114,7 +114,6 @@ h6 {
 header p {
   margin: 0.2em 0;
   font-size: 1.1rem;
-  color: var(--color-text-muted, #555);
 }
 
 body {
