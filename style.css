@@ -22,7 +22,7 @@ img {
 nav {
   display: flex;
   margin-bottom: 1em;
- --border-color: oklch(80% 0 200 / 40%);
+ --border-color: oklch(59.31% 0.00007 271.152 / 0.4);
   border-bottom: 1px solid var(--border-color);
 }
 
