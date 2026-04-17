@@ -41,8 +41,6 @@ nav a:hover {
 }
 
 nav a.current {
-  border-bottom-color: var(--border-color);
-  padding: 0.4em;
   font-weight: bold;
 }
 
