@@ -6,8 +6,8 @@ function $$(selector, context = document) {
 
 const BASE_PATH =
   (location.hostname === "localhost" || location.hostname === "127.0.0.1")
-    ? "/"                 // local dev server
-    : "/portfolio/";      // your GitHub Pages repo name
+    ? "/"                 
+    : "/portfolio/";     
 
 
 let pages = [
@@ -15,7 +15,6 @@ let pages = [
   { url: "projects/", title: "Projects" },
   { url: "contacts/", title: "Contact" },
   { url: "Resume/", title: "Resume" },
-  {url: "https://github.com/Nicholas-Chann", title: "GitHub" }
 ];
 
 let nav = document.createElement('nav');
@@ -62,11 +61,9 @@ document.body.insertAdjacentHTML(
   `
 );
 
-
-let select = document.querySelector(".color-scheme select");
+let select = document.querySelector("#theme-select");
 
 select.addEventListener("input", function (event) {
   console.log("color scheme changed to", event.target.value);
 });
-
 

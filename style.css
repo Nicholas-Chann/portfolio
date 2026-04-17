@@ -1,7 +1,7 @@
 html {
   --color-accent: oklch(82.076% 0.16231 76.525);
   accent-color: var(--color-accent);
-  color-scheme: light dark;
+  color-scheme: dark;
 }
 
 body {
