@@ -22,17 +22,17 @@ let nav = document.createElement('nav');
 document.body.prepend(nav);
 
 for (let p of pages) {
-    let url = p.url;
-    let title = p.title;
+  let url = p.url;
+  let title = p.title;
 
-    if (!url.startsWith('http')) {
-  url = BASE_PATH + url;
-}
+  if (!url.startsWith("http")) {
+    url = BASE_PATH + url;
+  }
 
-let a = document.createElement('a');
-a.href = url;
-a.textContent = title;
-nav.append(a);
+  let a = document.createElement("a");
+  a.href = url;
+  a.textContent = title;
+  nav.append(a);
 }
 
 let navLinks = $$("nav a");
@@ -50,18 +50,23 @@ if (currentLink) {
 
 document.body.insertAdjacentHTML(
   "afterbegin",
-	<label class="color-scheme">
-		Theme:
-		<select>
-        <option value="auto">Automatic</option>
-        <option value="light">Light</option>
-        <option value="dark">Dark</option>
-		</select>
-	</label>,
+  `
+  <label class="color-scheme">
+    Theme:
+    <select id="theme-select">
+      <option value="auto">Automatic</option>
+      <option value="light">Light</option>
+      <option value="dark">Dark</option>
+    </select>
+  </label>
+  `
 );
 
-select.addEventListener('input', function (event) {
-  console.log('color scheme changed to', event.target.value);
+
+let select = document.querySelector(".color-scheme select");
+
+select.addEventListener("input", function (event) {
+  console.log("color scheme changed to", event.target.value);
 });
 
 
