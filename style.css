@@ -22,8 +22,9 @@ img {
 nav {
   display: flex;
   margin-bottom: 1em;
- --border-color: oklch(71.953% 0.00113 13.205 / 0.4);
+ --border-color: oklch(50% 10% 200 / 40%);
   border-bottom: 1px solid var(--border-color);
+  padding: 0.4em;
 }
 
 nav a {
