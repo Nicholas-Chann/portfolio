@@ -29,11 +29,16 @@ for (let p of pages) {
 let url = p.url;
 let title = p.title;
 // next step: create link and add it to nav
-
 let a = document.createElement('a');
 a.href = url;
 a.textContent = title;
 nav.append(a);
+
+if (a.host === location.host && a.pathname === location.pathname) {
+  a.classList.add('current');
+}
+}
+
 let navLinks = $$("nav a");
 
 let currentLink = navLinks.find(
