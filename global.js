@@ -2,6 +2,7 @@ console.log('IT’S ALIVE!');
 
 function $$(selector, context = document) {
   return Array.from(context.querySelectorAll(selector));
+}
 
   let currentLink = navLinks.find(
   (a) => a.host === location.host && a.pathname === location.pathname,
@@ -29,4 +30,4 @@ for (let p of pages) {
 
 // Create link and add it to nav
 nav.insertAdjacentHTML('beforeend', `<a href="${url}">${title}</a>`);
-}
+
