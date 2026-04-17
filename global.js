@@ -48,5 +48,20 @@ if (currentLink) {
   currentLink.classList.add('current');
 }
 
+document.body.insertAdjacentHTML(
+  "afterbegin",
+	<label class="color-scheme">
+		Theme:
+		<select>
+        <option value="auto">Automatic</option>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+		</select>
+	</label>,
+);
+
+select.addEventListener('input', function (event) {
+  console.log('color scheme changed to', event.target.value);
+});
 
 

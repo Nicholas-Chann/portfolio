@@ -2,7 +2,6 @@ html {
   --color-accent: oklch(82.076% 0.16231 76.525);
   accent-color: var(--color-accent);
   color-scheme: light dark;
-  color-scheme: dark;
 }
 
 body {
@@ -36,7 +35,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: oklch(from var(--color-accent) 95% 5% h);
+  background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
   border-bottom: 0.4em solid var(--color-accent);
 }
 
@@ -164,4 +163,12 @@ article h3 {
 
 article:last-child {
   border-bottom: none;
+}
+
+label.color-scheme{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 80%;
+  font-family: inherit;
 }
