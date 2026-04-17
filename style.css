@@ -22,7 +22,7 @@ img {
 nav {
   display: flex;
   margin-bottom: 1em;
- --border-color: oklch(85.113% 0.00128 107.58 / 0.822);
+  --border-color: oklch(50% 10% 200 / 40%);
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -32,7 +32,6 @@ nav a {
   color: inherit;
   text-align: center;
   padding: 0.4em;
-  border-bottom-color: 1px var(--border-color);
 }
 
 nav a:hover {
@@ -42,7 +41,6 @@ nav a:hover {
 
 nav a.current {
   border-bottom-color: var(--border-color);
-  padding-bottom: 0.4em;
   font-weight: bold;
 }
 
