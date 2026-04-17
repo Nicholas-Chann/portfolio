@@ -32,7 +32,7 @@ nav a {
   color: inherit;
   text-align: center;
   padding: 0.4em;
-  border-bottom: 1px solid var(--border-color); 
+  border-bottom-color: solid var(--border-color); 
 }
 
 nav a:hover {
@@ -41,6 +41,7 @@ nav a:hover {
 }
 
 nav a.current {
+  border-bottom-color: solid var(--border-color); 
   font-weight: bold;
 }
 
