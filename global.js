@@ -13,8 +13,8 @@ const BASE_PATH =
 let pages = [
   { url: "", title: "Home" },
   { url: "projects/", title: "Projects" },
-  { url: "contact/", title: "Contact" },
-  { url: "resume/", title: "Resume" }
+  { url: "contacts/", title: "Contact" },
+  { url: "Resume/", title: "Resume" }
 ];
 
 let nav = document.createElement('nav');
