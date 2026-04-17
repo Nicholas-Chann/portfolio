@@ -20,10 +20,12 @@ for (let p of pages) {
   // next step: create link and add it to nav
 
   // Create link and add it to nav
-nav.insertAdjacentHTML('beforeend', `<a href="${url}">${title}</a>`);
+nav.insertAdjacentHTML('beforeend', `<a href="/portfolio/${url}">${title}</a>`);
 }
 
-  let currentLink = navLinks.find(
+let navLinks = $$("nav a");
+
+let currentLink = navLinks.find(
   (a) => a.host === location.host && a.pathname === location.pathname,
 );
 
