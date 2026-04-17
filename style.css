@@ -22,7 +22,7 @@ img {
 nav {
   display: flex;
   margin-bottom: 1em;
- --border-color: oklch(85% 0 0 / 40%);
+ --border-color: oklch(85.113% 0.00128 107.58 / 0.822);
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -37,11 +37,11 @@ nav a {
 
 nav a:hover {
   background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
-  border-bottom: 0.4em solid var(--color-accent);
+  border-bottom: solid var(--color-accent);
 }
 
 nav a.current {
-  border-bottom-color: 1px var(--border-color);
+  border-bottom-color: var(--border-color);
   padding-bottom: 0.4em;
   font-weight: bold;
 }
