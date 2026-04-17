@@ -66,11 +66,7 @@ let select = document.querySelector("#color-scheme-select");
 
 if ("colorScheme" in localStorage) {
   const saved = localStorage.colorScheme;
-
-  // Apply saved theme
   document.documentElement.style.setProperty("color-scheme", saved);
-
-  // Update the dropdown so it matches
   select.value = saved;
 }
 
