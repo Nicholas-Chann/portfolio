@@ -5,8 +5,8 @@ const latestProjects = projects.slice(0, 3);
 
 const projectsContainer = document.querySelector('.projects');
 
-const githubData = await fetchGitHubData('nicholas-chann');
-const profileStats = document.querySelector('$profile-stats');
+const githubData = await fetchGithubData('Nicholas-Chann');
+const profileStats = document.querySelector('#profile-stats');
 
 if (profileStats) {
   profileStats.innerHTML = `
