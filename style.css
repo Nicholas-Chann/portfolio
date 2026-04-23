@@ -173,21 +173,21 @@ label.color-scheme{
 
 #profile-stats dl {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  grid-template-columns: repeat(4, 1fr); 
   text-align: center;
   gap: 0.5rem;
 }
 
 #profile-stats dt {
-  grid-row: 1;           /* ALL labels go in row 1 */
+  grid-row: 1;          
   font-size: 0.8rem;
-  color: #6b7280;        /* gray like screenshot */
+  color: #6b7280;       
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 
 #profile-stats dd {
-  grid-row: 2;           /* ALL values go in row 2 */
+  grid-row: 2;           
   margin: 0;
   font-size: 2rem;
   font-weight: 500;
