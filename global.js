@@ -75,3 +75,19 @@ select.addEventListener("input", function (event) {
   localStorage.colorScheme = event.target.value;
   document.documentElement.style.setProperty('color-scheme', event.target.value);
 });
+
+export async function fetchJSON(url) {
+  try {
+    // Fetch the JSON file from the given URL
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Failed to fetch JSON data: ${response.status}`);
+    }
+
+    const data = await response.json();
+    return data;
+
+  } catch (error) {
+    console.error('Error fetching or parsing JSON data:', error);
+  }
+}
