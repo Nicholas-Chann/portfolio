@@ -78,62 +78,36 @@ select.addEventListener("input", function (event) {
 
 export async function fetchJSON(url) {
   try {
-    // Fetch the JSON file from the given URL
     const response = await fetch(url);
+
     if (!response.ok) {
-      throw new Error(`Failed to fetch JSON data: ${response.status}`);
+      throw new Error(`Failed to fetch: ${response.status} ${response.statusText}`);
     }
 
-    const data = await response.json();
-    return data;
-
+    return await response.json();
   } catch (error) {
     console.error('Error fetching or parsing JSON data:', error);
   }
 }
 
 export function renderProjects(projects, containerElement, headingLevel = 'h2') {
+  if (!containerElement) return;
 
-  // Check if container exists
-  if (!containerElement) {
-    console.error('Container element not found');
-    return;
-  }
-
-  // Clear container before adding new content
   containerElement.innerHTML = '';
 
-  // Handle empty project list
-  if (!projects || projects.length === 0) {
-    containerElement.innerHTML = '<p>No projects available.</p>';
-    return;
-  }
-
-  // Loop through projects array
-  projects.forEach(project => {
-
-    // Create article
+  projects.forEach((project) => {
     const article = document.createElement('article');
 
-    // Validate heading level
-    const validHeading = /^h[1-6]$/.test(headingLevel)
-      ? headingLevel
-      : 'h2';
-
-    // Add content
     article.innerHTML = `
-      <${validHeading}>${project.title || 'Untitled Project'}</${validHeading}>
-      <img src="${project.image || ''}" alt="${project.title || 'Project image'}">
-      <p>${project.description || 'No description available.'}</p>
+      <${headingLevel}>${project.title}</${headingLevel}>
+      <img src="${project.image}" alt="${project.title}">
+      <p>${project.description}</p>
     `;
 
-    // Append article
     containerElement.appendChild(article);
-
   });
 }
 
 export async function fetchGitHubData(username) {
-  // return statement here
   return fetchJSON(`https://api.github.com/users/${username}`);
 }
