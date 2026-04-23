@@ -1,26 +1,31 @@
 [
     {
-        "title": "Lorem ipsum dolor sit.",
+        "title": "MyAnimeList Analysis.",
+        "year": "2026",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus eos laborum dignissimos tempora nesciunt doloremque illo repellendus voluptatem tenetur labore! Laborum possimus est distinctio ex! Ratione, illo. Et, ea quasi?"
     },
     {
-        "title": "Possimus perspiciatis ratione cupiditate!",
+        "title": "Personal Finance Tracker",
+        "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Deserunt corporis sint quia nemo odio, dolores atque, ducimus a nam, in illum! Nemo quidem sequi est reiciendis nisi, commodi voluptates magnam porro illo possimus laborum error accusantium quis vel?"
     },
     {
-        "title": "Dolor perferendis obcaecati rerum!",
+        "title": "League of Legends Win Predictor",
+        "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Facere nam necessitatibus asperiores dolorem excepturi reiciendis maxime odio similique libero veritatis velit ullam eos dicta deleniti, culpa in inventore labore. Officia reiciendis, aut repellendus consequuntur doloribus illum non suscipit!"
     },
     {
-        "title": "Aperiam molestiae corrupti minima?",
+        "title": "Twitch Dataset Analysis.",
+        "year": "2026",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Dolores nulla, et doloremque magnam praesentium officiis tenetur fuga, dicta consequatur distinctio, vero iusto. Id magnam possimus dolorem architecto nesciunt perferendis quaerat sed officia natus, ipsum corporis neque voluptatem provident."
     },
     {
-        "title": "Nobis cumque voluptatum ipsum?",
+        "title": "Online Shopping Website",
+        "year": "2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Similique mollitia praesentium quas provident, ad temporibus autem. Suscipit vitae dolore similique eaque ex voluptate, molestias quasi? Quo facilis illum ut impedit voluptatem iste, illo vero distinctio veritatis, numquam voluptate."
     },
