@@ -6,7 +6,7 @@ const latestProjects = projects.slice(0, 3);
 const projectsContainer = document.querySelector('.projects');
 
 const githubData = await fetchGitHubData('Nicholas-Chann');
-const profileStats = document.querySelector('.profile-stats');
+const profileStats = document.querySelector('$profile-stats');
 
 if (profileStats) {
   profileStats.innerHTML = `
