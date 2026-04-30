@@ -205,3 +205,80 @@ label.color-scheme{
   margin-block: 2em;
   overflow: visible;
 }
+
+.legend {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  gap: 1em;
+  border: 1px solid currentColor;
+  padding: 1em;
+  margin-block: 2em;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.swatch {
+  display: inline-block;
+  width: 1em;
+  aspect-ratio: 1 / 1;
+  background-color: var(--color);
+  border-radius: 0.25em;
+  border-radius: 75%;
+}
+
+.chart-container {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  margin-block: 2em;
+}
+
+.legend {
+  flex: 1;
+}
+
+&:has(path:hover) {
+  path:not(:hover) {
+    opacity: 0.5;
+  }
+}
+
+path {
+  transition: 300ms;
+}
+
+.selected {
+  --color: oklch(60% 45% 0) !important;
+
+  &:is(path) {
+    fill: var(--color);
+  }
+}
+
+
+.searchBar {
+  display: block;
+  width: 100%;
+  max-width: 60em;
+  box-sizing: border-box;
+
+  font: inherit;
+  font-size: 1.25rem;
+
+  padding: 0.45em 0.6em;
+  margin-block: 1.5em;
+
+  border: 1px solid #bbb;
+  border-radius: 0.1em;
+  background: canvas;
+  color: canvastext;
+}
+
+.searchBar::placeholder {
+  color: color-mix(in oklch, canvastext, canvas 45%);
+}
