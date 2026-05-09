@@ -282,3 +282,117 @@ path {
 .searchBar::placeholder {
   color: color-mix(in oklch, canvastext, canvas 45%);
 }
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color, #ddd);
+  border-radius: 0.75rem;
+}
+
+.stats dt {
+  grid-row: 1;
+  font-weight: bold;
+  color: #666;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.stats dd {
+  grid-row: 2;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+dl.info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem 1rem;
+  margin: 0;
+  padding: 1rem;
+  border: 1px solid #d0d7de;
+  border-radius: 0.75rem;
+  background: canvas;
+  color: canvastext;
+}
+
+dl.info dt {
+  font-weight: 600;
+  color: #6b7280;
+}
+
+dl.info dd {
+  margin: 0;
+}
+
+.tooltip {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  z-index: 10;
+}
+
+circle {
+  transition: 200ms;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+circle:hover {
+  transform: scale(1.5);
+}
+
+circle.selected {
+  fill: #ff6b6b;
+}
+
+@keyframes marching-ants {
+  to {
+    stroke-dashoffset: -8; /* 5 + 3 */
+  }
+}
+
+.selection {
+  fill-opacity: 0.1;
+  stroke: black;
+  stroke-opacity: 0.7;
+  stroke-dasharray: 5 3;
+  animation: marching-ants 2s linear infinite;
+}
+
+dl.info {
+  /* ... other styles ... */
+  transition-duration: 500ms;
+  transition-property: opacity, visibility;
+}
+
+dl.info[hidden]:not(:hover, :focus-within) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.language-breakdown {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 0.5rem 2rem;
+  align-items: start;
+  min-height: 4rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.language-breakdown dt {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.language-breakdown dd {
+  margin: 0;
+  font-size: 0.85rem;
+  text-align: center;
+  line-height: 1.3;
+}
