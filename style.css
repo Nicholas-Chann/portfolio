@@ -76,11 +76,42 @@ button {
   gap: 1em;
 }
 
+.projects a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.projects a.project-link {
+  display: contents;
+  text-decoration: none;
+  color: inherit;
+}
+
+.projects a.project-link:hover article {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-6px);
+}
+
+.projects a:hover article {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-6px);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.projects article {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
 article {
   display: grid;
   grid-template-rows: subgrid;
-  grid-row: span 3;
+  grid-row: span 4;
   gap: 1em;
+  margin-block: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #ddd;
 }
 
 h1 {
@@ -147,21 +178,12 @@ section h2 {
 }
 
 
-article {
-  margin-block: 1.5rem;
-  padding-bottom: 1rem;
-  border-bottom: 2px solid #ddd;
-}
-
 
 article h3 {
   font-size: 1.3rem;
   margin-bottom: 0.3em;
 }
 
-article:last-child {
-  border-bottom: none;
-}
 
 label.color-scheme {
   position: absolute;
@@ -194,10 +216,10 @@ label.color-scheme {
 }
 
 .project-year {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: gray;
-  font-style: italic;
   margin-top: 0.5rem;
+  margin-bottom: 0;
 }
 
 #projects-pie-plot {
@@ -469,7 +491,7 @@ dl.info[hidden]:not(:hover, :focus-within) {
   display: flex;
   gap: 1rem;
 
-  > * {
+  >* {
     flex: 1;
   }
 }

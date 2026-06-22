@@ -6,8 +6,8 @@ function $$(selector, context = document) {
 
 const BASE_PATH =
   (location.hostname === "localhost" || location.hostname === "127.0.0.1")
-    ? "/"                 
-    : "/portfolio/";     
+    ? "/"
+    : "/portfolio/";
 
 
 let pages = [
@@ -15,7 +15,6 @@ let pages = [
   { url: "projects/", title: "Projects" },
   { url: "contacts/", title: "Contact" },
   { url: "Resume/", title: "Resume" },
-  { url: "Meta/", title: "Meta" },
   { url: "https://github.com/nicholas-chann", title: "GitHub" }
 ];
 
@@ -91,25 +90,31 @@ export async function fetchJSON(url) {
   }
 }
 
-export function renderProjects(projects, containerElement, headingLevel = 'h2') {
-  if (!containerElement) return;
+export function renderProjects(projects, container, headingLevel = 'h2') {
+  container.innerHTML = '';
 
-  containerElement.innerHTML = '';
-
-  projects.forEach((project) => {
+  for (let project of projects) {
     const article = document.createElement('article');
 
     article.innerHTML = `
-      <${headingLevel}>${project.title}</${headingLevel}>
-      <img src="${project.image}" alt="${project.title}">
-      <div>
-        <p>${project.description}</p>
-        <p class="project-year">${project.year}</p>
-      </div>
-    `;
+    <${headingLevel}>${project.title}</${headingLevel}>
+    <img src="${project.image}" alt="${project.title}">
+    <p class="project-year">${project.year}</p>
+    <p>${project.description}</p>
+`;
 
-    containerElement.appendChild(article);
-  });
+    if (project.url) {
+      const link = document.createElement('a');
+      link.href = project.url;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.className = 'project-link';
+      link.appendChild(article);
+      container.appendChild(link);
+    } else {
+      container.appendChild(article);
+    }
+  }
 }
 
 export async function fetchGitHubData(username) {
