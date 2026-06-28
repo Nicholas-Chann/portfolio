@@ -3,77 +3,77 @@
         "title": "MyAnimeList Analysis",
         "year": "2026",
         "image": "https://thumbs.dreamstime.com/b/los-angeles-california-usa-jule-illustrative-editorial-myanimelist-com-website-homepage-my-anime-list-los-angeles-california-157096126.jpg",
-        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus eos laborum dignissimos tempora nesciunt doloremque illo repellendus voluptatem tenetur labore! Laborum possimus est distinctio ex! Ratione, illo. Et, ea quasi?",
+        "description": "Analyzed anime trends and viewer ratings from MyAnimeList data, focusing on isekai genre popularity over time. Built with Python and Pandas, with visualizations highlighting what makes a highly-rated isekai stand out.",
         "url": "https://github.com/Nicholas-Chann/MyAnimeList-Isekai-Analysis"
     },
     {
         "title": "Personal Finance Tracker",
         "year": "2025",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLZrqnoppmhAIdsRyiPe49AbTExIT0WbhquJhuu7p5mg&s=10",
-        "description": "Deserunt corporis sint quia nemo odio, dolores atque, ducimus a nam, in illum! Nemo quidem sequi est reiciendis nisi, commodi voluptates magnam porro illo possimus laborum error accusantium quis vel?",
+        "description": "A personal finance dashboard built with Python and Streamlit for tracking expenses over time. Features interactive charts to visualize spending habits.",
         "url": "https://github.com/Nicholas-Chann/Personal-Finance-Tracker"
     },
     {
         "title": "League of Legends Win Predictor",
         "year": "2025",
         "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/565197caf987af4e4da307df6e2b235a28714736-837x469.jpg?accountingTag=LoL",
-        "description": "Facere nam necessitatibus asperiores dolorem excepturi reiciendis maxime odio similique libero veritatis velit ullam eos dicta deleniti, culpa in inventore labore. Officia reiciendis, aut repellendus consequuntur doloribus illum non suscipit!",
+        "description": "A machine learning project that predicts match outcomes using early and mid game states. Built with Python and scikit-learn featuring a Random Forest classifier trained on thousands of ranked games.",
         "url": "https://github.com/Nicholas-Chann/League-of-Legends-Win-Predictor"
     },
     {
         "title": "Twitch Dataset Analysis",
         "year": "2026",
         "image": "https://variety.com/wp-content/uploads/2019/09/twitch_logo.jpg?w=1000&h=667&crop=1",
-        "description": "Dolores nulla, et doloremque magnam praesentium officiis tenetur fuga, dicta consequatur distinctio, vero iusto. Id magnam possimus dolorem architecto nesciunt perferendis quaerat sed officia natus, ipsum corporis neque voluptatem provident.",
+        "description": "Explored a large Twitch dataset using SQL for querying and Python for analysis to uncover trends in streamer growth, viewer behavior, and game popularity.",
         "url": "https://github.com/Nicholas-Chann/Twitch-Dataset-Analysis"
     },
     {
         "title": "Online Shopping Website",
         "year": "2024",
         "image": "https://media.istockphoto.com/id/1488783125/vector/shopping-cart-notification-icon-containing-cart-shopping-shopping-bags-ecommerce-buy-mobile.jpg?s=612x612&w=0&k=20&c=-0XwiEGAjHh6qXu21LkCp2z5csE1mqyBR4kl3PWOHAs=",
-        "description": "Similique mollitia praesentium quas provident, ad temporibus autem. Suscipit vitae dolore similique eaque ex voluptate, molestias quasi? Quo facilis illum ut impedit voluptatem iste, illo vero distinctio veritatis, numquam voluptate.",
+        "description": "A fully functional e-commerce desktop application built with Java and a GUI framework, featuring product browsing, a shopping cart, and checkout flow.",
         "url": "https://github.com/Nicholas-Chann/CISC191Project1"
     },
     {
         "title": "Interactive Visualization; Sea Surface Temperatures",
         "year": "2026",
         "image": "../images/SST.png",
-        "description": "Eius esse, nostrum facilis dolore ratione in nisi quas modi laudantium et. Fugiat laborum a veritatis ducimus ex exercitationem sint quod, dolorem dolorum laudantium mollitia aliquam labore officia? Sapiente, maxime!",
+        "description": "An interactive D3.js visualization exploring sea surface temperature data over time. Users can explore trends along the west coast and anomalies through dynamic charts and maps.",
         "url": "https://nicholas-chann.github.io/Project-3-Interactive-Visual/"
     },
     {
         "title": "Weather App",
         "year": "2022",
         "image": "https://miro.medium.com/v2/resize:fit:1400/0*GJqID-iVs0NDF35M",
-        "description": "Libero repellat, corporis unde labore repellendus, nihil, iste consectetur eos quasi sint maxime dolore velit voluptatum iure ea. Quo error explicabo mollitia veritatis dolor quam minus reiciendis itaque, suscipit aut!",
+        "description": "A responsive weather app that fetches real-time data from a public API and displays current conditions and forecasts. Built with HTML, CSS, and JavaScript.",
         "url": "https://nicholas-chann.github.io/Weather-App/"
     },
     {
         "title": "To-do List App",
         "year": "2022",
         "image": "https://1.bp.blogspot.com/-i78iKr_P9Pk/X9ohjXyc5eI/AAAAAAAAA_4/8UauxZaOgUshGK7MXwW1gZqts7Zrf_AewCLcBGAsYHQ/s1280/Todo%2BList%2BApp%2Busing%2BHTML%2BCSS%2B%2526%2BJavaScript.webp",
-        "description": "Sint, nostrum quasi. Cumque quod asperiores nobis fugit earum ut voluptatibus perspiciatis unde, magnam quo. Mollitia fugit perferendis nisi error maxime eveniet quos sint, ea assumenda praesentium minus accusantium? Quod.",
+        "description": "A to-do list app built with HTML, CSS, and JavaScript.",
         "url": "https://nicholas-chann.github.io/To-Do-List-Project/"
     },
     {
         "title": "Persuasive/Deceptive visualization",
         "year": "2026",
         "image": "../images/persusasive.png",
-        "description": "Iure voluptates facilis laudantium expedita maxime pariatur quam aut eveniet? Expedita, similique veritatis? Excepturi ipsam voluptate voluptatum repellat sunt deleniti eligendi aperiam, eius quisquam nemo vel aliquid minus repudiandae doloremque!",
+        "description": "A paired visualization project exploring how design choices can make the same data appear to tell opposite stories.",
         "url": "https://sweekrit-b.github.io/dsc106-project2/"
     },
     {
         "title": "Flappy Bird Game",
         "year": "2024",
         "image": "https://cdn1.epicgames.com/spt-assets/36082ce08c3f402f8155bb3a2fd8afeb/flappy-bird-wnu7w.png",
-        "description": "Blanditiis dolores magnam animi rerum veritatis quod fuga laboriosam temporibus nihil itaque officiis optio vel maiores ipsum hic et numquam, voluptas, culpa ipsa incidunt consequuntur impedit eligendi. Amet, atque quaerat?",
+        "description": "A browser-based recreation of the classic Flappy Bird game built with HTML5 Canvas and JavaScript.",
         "url": "https://nicholas-chann.github.io/Flappy-Bird-Game/"
     },
     {
         "title": "DSC106 Final Project",
         "year": "2026",
         "image": "../images/Final project.png",
-        "description": "Blanditiis dolores magnam animi rerum veritatis quod fuga laboriosam temporibus nihil itaque officiis optio vel maiores ipsum hic et numquam, voluptas, culpa ipsa incidunt consequuntur impedit eligendi. Amet, atque quaerat?",
+        "description": "A data-driven storytelling project visualizing storm and weather futures using real climate datasets. Built with D3 featuring scrollytelling and interactive charts.",
         "url": "https://nkerudi.github.io/Final-Project-DSC106-/storm_futures/"
     }
 ]
